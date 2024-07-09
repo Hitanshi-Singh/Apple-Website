@@ -14,7 +14,7 @@ const HowItWorks = () => {
         start: "20% bottom",
       },
       opacity: 0,
-      scale: 2,
+      scale: 1.1,
       duration: 2,
       ease: "power2.inOut",
     });
@@ -29,7 +29,7 @@ const HowItWorks = () => {
   return (
     <section className="common-padding">
       <div className="screen-max-width">
-        <div id="chip" className="flex-center w-full my-20">
+        <div id="chip" className="flex-center w-full my-20 ">
           <img src={chipImg} alt="chip" width={180} height={180} />
         </div>
         <div className="flex flex-col items-center">
@@ -71,28 +71,28 @@ const HowItWorks = () => {
           <div className="flex-1 flex justify-center flex-col">
             <p className="hiw-text g_fadeIn">
               A17 Pro is an entirely new class of iphone chip that delivers our
-              
-              <span className="text-white">{' '}
+              <span className="text-white">
+                {" "}
                 best graphic performance by far
               </span>
               .
             </p>
 
-          <p className="hiw-text g_text">
-            Mobile{" "}
-            <span className="text-white">
-              games will look and feel so immersive{" "}
-            </span>
-            , with incredibly detailed environments and characters.
-          </p>
+            <p className="hiw-text g_text">
+              Mobile{" "}
+              <span className="text-white">
+                games will look and feel so immersive{" "}
+              </span>
+              , with incredibly detailed environments and characters.
+            </p>
           </div>
-        
-        <div className="flex-1 flex justify-center flex-col g_fadeIn">
-          <p className="hiw-text">New</p>
-          <p className="hiw-bigtext">Pro-class GPU</p>
-          <p className="hiw-text">with 6 cores</p>
+
+          <div className="flex-1 flex justify-center flex-col g_fadeIn">
+            <p className="hiw-text">New</p>
+            <p className="hiw-bigtext">Pro-class GPU</p>
+            <p className="hiw-text">with 6 cores</p>
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );
